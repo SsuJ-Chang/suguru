@@ -40,7 +40,7 @@
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
+    --shadow-glow: 0 0 40px rgba(94, 140, 138, 0.3);
 
     /* Transitions */
     --transition-fast: 0.15s ease;
@@ -158,7 +158,7 @@ a {
     display: inline-block;
     padding: var(--spacing-xs) var(--spacing-md);
     background: var(--gradient-subtle);
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    border: 1px solid rgba(94, 140, 138, 0.3);
     border-radius: var(--radius-full);
     font-size: 0.875rem;
     color: var(--color-text-secondary);
@@ -302,7 +302,7 @@ a {
 
 .project-card:not(.coming-soon):hover {
     background: var(--color-bg-card-hover);
-    border-color: rgba(99, 102, 241, 0.3);
+    border-color: rgba(94, 140, 138, 0.3);
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
@@ -353,7 +353,7 @@ a {
 
 .tag {
     padding: 4px 12px;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(94, 140, 138, 0.1);
     border-radius: var(--radius-full);
     font-size: 0.75rem;
     color: var(--color-accent-primary);
