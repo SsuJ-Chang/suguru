@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RJ 的履歷 - 軟體工程師">
+  <meta name="keywords" content="RJ, 履歷, Resume, 軟體工程師, Developer">
+  <meta name="author" content="RJ">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RJ's Resume">
+  <meta property="og:description" content="RJ 的個人履歷與工作經歷">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rj-tw.com/resume">
+
+  <title>Resume - RJ</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3462351339304317"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F790QPXY5J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-F790QPXY5J');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">
+      <img src="assets/logo.png" alt="RJ's Hub" class="nav-logo-img">
+      <span class="nav-logo-text">RJ's Hub</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#projects">專案</a>
+      <a href="https://blog.rj-tw.com" target="_blank">部落格</a>
+      <a href="/resume.html" class="active">履歷</a>
+      <a href="/#about">關於</a>
+    </div>
+  </nav>
+
+  <!-- Resume Container -->
+  <main class="resume-container">
+    <div class="resume-paper">
+      <!-- Header -->
+      <header class="resume-header">
+        <div class="resume-name-section">
+          <h1 class="resume-name">章 思 傑</h1>
+          <p class="resume-name-en">Ssu-Chieh Chang (RJ)</p>
+          <p class="resume-title">Software Engineer</p>
+        </div>
+        <div class="resume-contact">
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>loch0728@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+886 9xx-xxx-xxx</span>
+          </div>
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>新北市, 台灣</span>
+          </div>
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
+            <a href="https://rj-tw.com" target="_blank">rj-tw.com</a>
+          </div>
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            <a href="https://github.com/SsuJ-Chang" target="_blank">github.com/SsuJ-Chang</a>
+          </div>
+          <div class="contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <a href="https://www.linkedin.com/in/anfer-chang/" target="_blank">linkedin.com/in/anfer-chang/</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          關於我
+        </h2>
+        <p class="summary-text">
+          擁有 3 年以上軟體開發經驗的工程師，專注於後端開發與全端應用。熱愛打造簡潔、直覺且高效能的使用者體驗。
+          擅長設計網站架構，具備 RoR、Python FastAPI、AWS 等技術棧的實戰經驗。
+          另外有 11 年遊戲開發經驗，7 年擔任主企劃主導產品與專案方向。完整參與 3 個從開案至上市營運的遊戲專案。
+          具備完整專案開發與管理經驗，擅長遊戲設計、產品整合優化、數據分析。
+          對新技術保持高度好奇心，樂於分享知識、樂觀積極、喜好團隊合作並持續學習成長。
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          </svg>
+          工作經歷
+        </h2>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">資深後端工程師</h3>
+              <p class="experience-company">順立智慧股份有限公司</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">2022.07 - 現在</span>
+              <span class="experience-location">台北市</span>
+            </div>
+          </div>
+          <ul class="experience-list">
+            <li>負責 POS 系統各項功能開發、優化與維護。</li>
+            <li>門市助理全新專案開發。</li>
+            <li>串接發票系統商功能應用於 POS 與 EC 電商使用。</li>
+            <li>協助處理 EC 電商之客戶服務，包含系統的除錯與優化。</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">資深遊戲企劃組長</h3>
+              <p class="experience-company">網銀國際股份有限公司台北分公司</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">2017.10 - 2021.07</span>
+              <span class="experience-location">台北市</span>
+            </div>
+          </div>
+          <ul class="experience-list">
+            <li>規劃遊戲開發之短、中、長期計劃與遊戲 High-Level 架構，並評估時程、策略與可行性，確認人力與必要資源之需求。</li>
+            <li>進行遊戲核心設計、發想與驗證，導入敏捷開發，快速迭代功能建立原型。</li>
+            <li>帶領團隊確認並建立遊戲系統及商業模式。</li>
+            <li>設計遊戲數據後台查詢系統，以供平衡及監控使用。</li>
+            <li>建立內外部產品測試，包含多場學校（東泰高中、南強工商與青年高中）建教合作，並設計問券取得使用者回饋與分析數據做為調整與決策依據。</li>
+            <li>訓練企劃人員可獨立跨部門製作功能工作。</li>
+            <li>完成音樂音效系統之功能研究、分析並導入與執行製作。</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">遊戲企劃組長</h3>
+              <p class="experience-company">樂陞科技股份有限公司</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">2014.10 - 2017.10</span>
+              <span class="experience-location">新北市</span>
+            </div>
+          </div>
+          <ul class="experience-list">
+            <li>研究IP授權遊戲內容，並分析以建立手機版本之核心設計方向與準則。</li>
+            <li>主導並執行角色、戰鬥、系統、關卡、UI/UX與音樂音效設計方向與規格。</li>
+            <li>設計並執行製作約 15 位角色。向與規格。</li>
+            <li>與韓國代理商NEXON合作，並前往韓國確認營運細節。</li>
+            <li>指導企劃人員於擅長與偏好領域獨立作業之能力，並訓練初階企劃適應團隊工作與公司文化。</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">遊戲企劃組長</h3>
+              <p class="experience-company">原爆點數位科技股份有限公司</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-date">2010.09 - 2014.09</span>
+              <span class="experience-location">台北市</span>
+            </div>
+          </div>
+          <ul class="experience-list">
+            <li>研究 RTS 技術與編輯器功能，並和程式建立企劃工具。</li>
+            <li>執行並製作關卡、角色、數值、UI/UX 設計與系統設計。</li>
+            <li>13 位英雄人物背景、外觀、動作與技能表現設計與製作。</li>
+            <li>跨部門與程式、美術、QA 部門溝通合作。</li>
+            <li>發展電競系統並與華義電競隊伍 Spider 合作進行遊戲平衡。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Page Break for Print -->
+      <div class="page-break"></div>
+
+      <!-- Education -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+          </svg>
+          學歷
+        </h2>
+
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <h3 class="education-degree">統計資訊系 學士</h3>
+              <p class="education-school">天主教輔仁大學</p>
+            </div>
+            <div class="education-meta">
+              <span class="education-date">2000.09 - 2005.06</span>
+            </div>
+          </div>
+          <!-- <p class="education-details"></p> -->
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          技術能力
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4 class="skill-category-title">Frontend</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Backend</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Ruby on Rails</span>
+              <span class="skill-tag">Python FastAPI</span>
+              <span class="skill-tag">Python Flask</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">DevOps & Tools</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS EC2</span>
+              <span class="skill-tag">AWS S3</span>
+              <span class="skill-tag">AWS CloudFront</span>
+              <span class="skill-tag">AWS CloudWatch</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Nginx</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">中文（母語）</span>
+              <span class="skill-tag">English（中等）</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Side Projects -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+          個人專案
+        </h2>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h3 class="project-name">PDF Hero</h3>
+            <div class="project-links">
+              <a href="https://pdfhero.rj-tw.com" target="_blank" class="project-link">Demo</a>
+              <span class="link-separator">|</span>
+              <a href="https://github.com/SsuJ-Chang/pdfhero" target="_blank" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            永久免費、隱私優先的 PDF 轉檔工具。
+          </p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h3 class="project-name">Gooddamn（待上線）</h3>
+            <div class="project-links">
+              <a href="https://github.com/SsuJ-Chang/gooddamn" target="_blank" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            敏捷開發團隊專用的線上估點工具。
+          </p>
+        </div>
+      </section>
+
+      <!-- Professional Projects -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="10 8 16 12 10 16 10 8" />
+          </svg>
+          參與專案
+        </h2>
+
+        <div class="project-item">
+          <h3 class="project-name">CODE 2040</h3>
+          <p class="project-subtitle">台灣自製大型多人連線第三人稱射擊PC遊戲</p>
+          <ul class="project-list">
+            <li>使用 Unreal 4 引擎開發並研究自製第三人稱與第一人稱射擊系統</li>
+            <li>2021/1/20 在自製 Launcher 平台開始進行 OB</li>
+            <li>2021/2/2 於 Steam 全球同步開放 OB，開放前累積新增至願望清單超過 20 萬</li>
+            <li>2021/3 月全球 Launcher 與 Steam 下載超過 12 萬</li>
+            <li>主責整體遊戲設計方向、企劃人員管理、追蹤進度與跨部門協同作業</li>
+            <li>獨自負責所有音效相關設計，並與音效負責人導入各項技術</li>
+            <li>與 ROG 合作開放各硬體於遊戲內支援 Aura Sync 燈效</li>
+          </ul>
+          <div class="project-related-links">
+            <span class="related-label">相關連結：</span>
+            <a href="https://store.steampowered.com/app/993870/CODE2040/" target="_blank" class="related-link">Steam</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-name">真·三國無雙 斬</h3>
+          <p class="project-desc">與日本光榮 KOEI 合作獲得「真三國無雙7」授權，由全台灣團隊在 Unity 上開發的手機遊戲。</p>
+          <ul class="project-list">
+            <li>韓國 Nexon 代理在全球（除中國與日本）雙平台營運。</li>
+            <li>上市前事前預約超過 50 萬；上市後在雙平台連續多週下載排行第 1 名，累積超過 1000 萬。</li>
+            <li>上市一週內台灣雙平台營收排榜前 10 名，首月全球營收達 7 億台幣，連續 6 個月營收維持月均 1.5 億台幣。</li>
+            <li>開案即擔任企劃組長，完整參與開案至上市全部流程。</li>
+            <li>負責人員管理同時也負責多項系統、介面與角色技能設計與實際製作。</li>
+            <li>與韓國 Nexon 有直接合作經驗，並前往韓國考察及會議。</li>
+          </ul>
+          <div class="project-related-links">
+            <span class="related-label">相關連結：</span>
+            <a href="https://zh.wikipedia.org/wiki/%E7%9C%9F%C2%B7%E4%B8%89%E5%9B%BD%E6%97%A0%E5%8F%8C_%E6%96%A9"
+              target="_blank" class="related-link">維基百科 真·三國無雙 斬</a>
+            <span class="link-separator">|</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-name">戰神魔霸 God of Destiny</h3>
+          <p class="project-desc">台灣第一款自製 MOBA 類型 PC 遊戲，使用自製引擎開發。</p>
+          <ul class="project-list">
+            <li>自行研究 RTS 與 DotA-Like 遊戲相關技術。</li>
+            <li>與已故漫畫大師鄭問老師合作 2D 人物設計。</li>
+            <li>開案即為企劃成員，負責多項主要系統、關卡、13 位角色與介面設計與製作。</li>
+            <li>2 年半後成為組長帶領團隊至遊戲上市。</li>
+            <li>與華義電競隊 Spider 合作遊戲平衡。</li>
+            <li>2013年 ChinaJoy 超過 10 個國家廠商詢問授權代理事宜。</li>
+            <li>公測會員人數一週內達 15 萬，並開啟超過 12 萬場的戰局。</li>
+          </ul>
+          <div class="project-related-links">
+            <span class="related-label">相關連結：</span>
+            <a href="https://www.youtube.com/watch?v=s05j9DYJyk0" target="_blank" class="related-link">《戰神魔霸 God of
+              Destiny》未上市遊戲介紹</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Honors & Awards -->
+      <section class="resume-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="7" />
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+          </svg>
+          榮譽獎項
+        </h2>
+
+        <div class="award-item">
+          <div class="award-header">
+            <h3 class="award-name">最佳人氣海報獎</h3>
+            <span class="award-date">2025</span>
+          </div>
+          <p class="award-org">中央研究院 - 資料科學漫步 2025</p>
+          <a href="https://www3.stat.sinica.edu.tw/pds2025/photo.html" target="_blank" class="award-link">活動照片</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">RJ's Hub</div>
+        <p class="footer-text">© <span id="current-year"></span> RJ. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

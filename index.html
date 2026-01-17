@@ -16,6 +16,10 @@
 
     <title>RJ's Hub - 個人專案平台</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3462351339304317"
         crossorigin="anonymous"></script>
@@ -40,10 +44,14 @@
     <header class="hero">
         <div class="hero-bg"></div>
         <nav class="nav">
-            <div class="nav-logo">RJ's Hub</div>
+            <a href="/" class="nav-logo">
+                <img src="assets/logo.png" alt="RJ's Hub" class="nav-logo-img">
+                <span class="nav-logo-text">RJ's Hub</span>
+            </a>
             <div class="nav-links">
                 <a href="#projects">專案</a>
-                <a href="https://blog.rj-tw.com" target="_blank">Blog</a>
+                <a href="https://blog.rj-tw.com" target="_blank">部落格</a>
+                <a href="resume.html">履歷</a>
                 <a href="#about">關於</a>
             </div>
         </nav>
@@ -167,7 +175,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">RJ's Hub</div>
-                <p class="footer-text">© 2026 RJ. All rights reserved.</p>
+                <p class="footer-text">© <span id="current-year"></span> RJ. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -204,6 +212,9 @@
         document.querySelectorAll('.project-card, .stat-card, .about-text').forEach(el => {
             observer.observe(el);
         });
+
+        // Dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 

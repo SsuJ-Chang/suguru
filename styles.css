@@ -101,6 +101,17 @@ a {
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo-img {
+    height: 36px;
+    width: auto;
+}
+
+.nav-logo-text {
     font-size: 1.25rem;
     font-weight: 700;
     background: var(--gradient-primary);
