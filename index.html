@@ -9,12 +9,12 @@
     <meta name="author" content="RJ">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="RJ's Hub - 個人專案平台">
+    <meta property="og:title" content="RJ's Hub">
     <meta property="og:description" content="探索 RJ 開發的實用小工具與專案">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rj-tw.com">
 
-    <title>RJ's Hub - 個人專案平台</title>
+    <title>RJ's Hub</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -52,6 +52,19 @@
                 <a href="#projects">專案</a>
                 <a href="https://blog.rj-tw.com" target="_blank">部落格</a>
                 <a href="#about">關於</a>
+                <div class="lang-switcher">
+                    <div class="lang-current">
+                        <span>中文</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option active">中文</a>
+                        <a href="/en/" class="lang-option">English</a>
+                        <a href="/ja/" class="lang-option">日本語</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="hero-content">
@@ -280,6 +293,22 @@
 
         // Dynamic year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Language dropdown toggle
+        const langSwitcher = document.querySelector('.lang-switcher');
+        const langCurrent = document.querySelector('.lang-current');
+
+        if (langCurrent) {
+            langCurrent.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langSwitcher.classList.toggle('active');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                langSwitcher.classList.remove('active');
+            });
+        }
     </script>
 </body>
 

@@ -122,6 +122,7 @@ a {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: var(--spacing-lg);
 }
 
@@ -135,6 +136,101 @@ a {
 .nav-links a:hover {
     color: var(--color-text-primary);
 }
+
+/* Language Switcher Dropdown */
+.lang-switcher {
+    position: relative;
+    padding-left: 0.75rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    user-select: none;
+}
+
+.lang-current:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-text-primary);
+}
+
+.lang-current svg {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+}
+
+.lang-switcher.active .lang-current svg {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 120px;
+    background: var(--color-bg-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-fast);
+    z-index: 1000;
+}
+
+.lang-switcher.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    transition: all var(--transition-fast);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lang-option:last-child {
+    border-bottom: none;
+}
+
+.lang-option:hover {
+    background: rgba(94, 140, 138, 0.1);
+    color: var(--color-text-primary);
+}
+
+.lang-option.active {
+    color: var(--color-accent-primary);
+    font-weight: 600;
+    background: rgba(94, 140, 138, 0.15);
+}
+
+.lang-option.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: var(--color-text-muted);
+}
+
+.lang-option.disabled:hover {
+    background: transparent;
+    color: var(--color-text-muted);
+}
+
 
 /* ===== Hero Section ===== */
 .hero {
