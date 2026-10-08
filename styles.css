@@ -94,6 +94,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 72px;
     padding: var(--spacing-md) var(--spacing-lg);
     background: rgba(10, 10, 15, 0.8);
     backdrop-filter: blur(20px);
@@ -101,9 +102,11 @@ a {
 }
 
 .nav-logo {
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
 }
 
 .nav-logo-img {
@@ -121,9 +124,11 @@ a {
 }
 
 .nav-links {
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     gap: var(--spacing-lg);
+    white-space: nowrap;
 }
 
 .nav-links a {
@@ -602,11 +607,12 @@ a {
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     .nav {
-        padding: var(--spacing-sm) var(--spacing-md);
+        min-height: 64px;
+        padding: 0.875rem var(--spacing-sm);
     }
 
     .nav-links {
-        gap: var(--spacing-md);
+        gap: clamp(0.75rem, 3vw, var(--spacing-md));
     }
 
     .about-content {
@@ -634,6 +640,39 @@ a {
     }
 }
 
+@media (max-width: 600px) {
+    .nav {
+        padding: 0.75rem 0.875rem;
+    }
+
+    .nav-logo-text {
+        display: none;
+    }
+
+    .nav-logo-img {
+        height: 32px;
+    }
+
+    .nav-links {
+        gap: clamp(0.55rem, 2.8vw, 0.9rem);
+    }
+
+    .nav-links > a {
+        padding-block: 0.45rem;
+        font-size: 0.82rem;
+    }
+
+    .lang-switcher {
+        padding-left: clamp(0.45rem, 2vw, 0.7rem);
+    }
+
+    .lang-current {
+        gap: 0.35rem;
+        padding: 0.35rem 0.55rem;
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 480px) {
     .hero-badge {
         font-size: 0.75rem;
@@ -647,5 +686,38 @@ a {
 
     .stat-number {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav {
+        padding-inline: 0.65rem;
+    }
+
+    .nav-logo-img {
+        height: 30px;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-links > a {
+        font-size: 0.78rem;
+    }
+
+    .lang-switcher {
+        padding-left: 0.4rem;
+    }
+
+    .lang-current {
+        gap: 0.25rem;
+        padding-inline: 0.45rem;
+        font-size: 0.76rem;
+    }
+
+    .lang-current svg {
+        width: 12px;
+        height: 12px;
     }
 }
